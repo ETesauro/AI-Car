@@ -1,41 +1,44 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2019.3.3f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.3.3f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=21138 outsize=27115 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4528 outsize=2864 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=17994 outsize=8303 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2673 outsize=2186 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10868 outsize=665 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=40246 outsize=36296 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1113 outsize=975 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5056 outsize=2350 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=26542 outsize=324 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15784 outsize=46517 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15784 outsize=45543 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15784 outsize=36470 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15784 outsize=34760 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15784 outsize=51279 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15784 outsize=51303 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3697 outsize=3162 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11069 outsize=8912 ok=1
 Cmd: compileSnippet
-  api=4 type=0 insize=1602 outsize=2362 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL SHADOWS_SCREEN LIGHTPROBE_SH _NORMALMAP pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=4 insize=12109 outsize=1027 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=12109 outsize=1364 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=11985 outsize=1465 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=18301 outsize=3271 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=66874 outsize=1579 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=66874 outsize=1489 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=66874 outsize=2029 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=66874 outsize=1287 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=66874 outsize=1382 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=34089 outsize=682 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=34089 outsize=1032 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=34089 outsize=848 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=34089 outsize=622 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=34089 outsize=1269 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=34089 outsize=1520 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=34089 outsize=1359 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=34089 outsize=1261 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=79248 outsize=27129 ok=1
+  api=4 type=0 insize=3064 outsize=402 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=7868 outsize=8486 kw=SHADOWS_SHADOWMASK DECALS_3RT _NORMALMAP_TANGENT_SPACE _NORMALMAP _MASKMAP pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=7868 outsize=12426 kw=DEBUG_DISPLAY DECALS_3RT _NORMALMAP_TANGENT_SPACE _NORMALMAP _EMISSIVE_COLOR_MAP pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+
+Quitting shader compiler process
