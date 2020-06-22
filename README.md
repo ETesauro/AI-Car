@@ -11,4 +11,4 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 <img width="500" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_1.png?raw=true">
 <img width="500" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_2.png?raw=true">
 
-<em style="">La grafica globale non è quella definitiva. Ci saranno aggiornamenti per i palazzi, per i palazzi, per l'erba, ecc...</em>
+<em style="">La grafica globale non è quella definitiva. Ci saranno aggiornamenti per i palazzi, per gli alberi, per l'erba, ecc...</em>
