@@ -10,3 +10,5 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 ### Screenshots
 <img width="500" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_1.png?raw=true">
 <img width="500" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_2.png?raw=true">
+
+<em style="">La grafica globale non è quella definitiva.</em>
