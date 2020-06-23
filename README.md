@@ -1,6 +1,6 @@
 # AI-Car
 
-**Progetto di tirocinio presso sviluppato da Emmanuel Tesauro.**<br/>
+**Progetto di tirocinio sviluppato da Emmanuel Tesauro.**<br/>
 Breve descrizione...<br/>
 
 ### Link utili
