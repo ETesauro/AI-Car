@@ -479,12 +479,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167089862}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2902496c0120472b90269f94a0aec7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Record: 0
+  Record: 1
   DemonstrationName: AICarDemo
   DemonstrationDirectory: 
 --- !u!1 &221425492
@@ -3985,10 +3985,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 239889338}
     m_Modifications:
+    - target: {fileID: 463892459525823215, guid: 655e5407b09c9fb449a7f2f78cb5b8b3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6.9944615
+      objectReference: {fileID: 0}
+    - target: {fileID: 463892459525823215, guid: 655e5407b09c9fb449a7f2f78cb5b8b3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.35
+      objectReference: {fileID: 0}
     - target: {fileID: 1962350630239565824, guid: 655e5407b09c9fb449a7f2f78cb5b8b3,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440355874897605484, guid: 655e5407b09c9fb449a7f2f78cb5b8b3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7406855385225642314, guid: 655e5407b09c9fb449a7f2f78cb5b8b3,
         type: 3}
