@@ -82,6 +82,7 @@ public class CarAgent : Agent
         // vectorAction[1] -> avanti/dietro
         // vectorAction[2] -> frena
 
+        //Accelera
         if (vectorAction[1] == 0 || Input.GetKey(KeyCode.Space))
         {
             brakes = 15000;
@@ -96,58 +97,87 @@ public class CarAgent : Agent
             AddReward(0.1f);
         }
 
-        if (vectorAction[2] >= 0.5)
-        {
-            manualBrake = true;
-            frena(1f);
-        }
-        else manualBrake = false;
-
+        //Controllo se incrocia un pedone; true=l'ha incrociato, false=non l'ha incrociato
         pedoneCheck = CheckPedoni();
 
-        if (vectorAction[1] < 0 && !pedoneCheck)
-        {
-            AddReward(-5f);
-        }
-        else
-            AddReward(0.1f);
+        //Controllo se la macchina va all'indietro nel caso in cui non ha incrociato un pedone. Se sì, aggiungo un reward negativo
+        if (vectorAction[1] < 0 && !pedoneCheck)    AddReward(-5f);
+        else AddReward(0.1f);
 
-        if (vectorAction[1] > 0 && !pedoneCheck) AddReward(10f);
+        //Controllo se la macchina va avanti nel caso in cui non ha incrociato un pedone. Se sì, aggiungo un reward positivo
+        if (vectorAction[1] > 0 && !pedoneCheck)    AddReward(10f);
 
+        //Azioni da eseguire se si incrocia un pedone
         if (pedoneCheck)
         {
-            if (getVelocitySpeed() < 2 && getVelocitySpeed() > -1)
+
+            // --------- SISTEMARE DA QUI ---------
+            //Creare un metodo che restituisce true se la posizione della macchina è avanti sull'asse z rispetto a quella del pedone
+            //Mi serve per dire alla macchina di non frenare e di accelerare altrimenti rimarrebbe ferma e il pedone le andrebbe a sbattere addosso
+
+            //Se il pedone è sull'asse x vicino alla macchina
+            if ((pedone.transform.position.x - transform.position.x) >= -5.8f && (pedone.transform.position.x - transform.position.x) <= 4.6f)
+            {
+                 //Se il pedone è sull'asse z AVANTI alla macchina allora la macchina deve fermarsi
+                if (pedone.transform.position.z >= transform.position.z)
+                {
+                    //rBody.velocity = Vector3.zero;
+                    vectorAction[2] = 1;
+                    AddReward(30f);
+                }
+                //Se la macchina è avanti rispetto al pedone (Lo ha già superato ma lui sta attraversando lo stesso le strisce)
+                else
+                {
+                    Debug.Log("qui");
+                    pedone.transform.position = new Vector3(-5f, pedone.transform.position.y, pedone.transform.position.z);
+                    vectorAction[2] = 0;
+                    vectorAction[1] = 1;
+                }
+            }
+
+            // --------- FINO A QUI ---------
+            else
+            {
+                vectorAction[2] = 0;
+            }
+
+            if (getVelocitySpeed() < 3 && getVelocitySpeed() > -1)
             {
                 Debug.Log("Correct Speed");
-                AddReward(maxZdist * 100f);
+                AddReward(maxZdist * 20f);
             }
             else
             {
-                AddReward(-100f);
+                AddReward(-10f);
             }
+        }
+        else if (getVelocitySpeed() < 3) AddReward(-100f);
+
+        //Frena
+        if (vectorAction[2] >= 0.5)
+        {
+            manualBrake = true;
+            //vectorAction[1] = 0;
+            frena(1f);
         }
         else
         {
-            if (getVelocitySpeed() < 3 && getVelocitySpeed() > -3)
-            {
-
-                AddReward(-1000f);
-            }
-            else AddReward(0.5f);
+            manualBrake = false;
+            brakes = 0;
         }
 
+        //Se frena nella posizione sbagliata (lontano dal pedone)
         if (!pedoneCheck && manualBrake)
         {
-
             Debug.Log("Wrong Brake");
-
             AddReward(-10f);
         }
 
+        //Se frena nella posizione corretta (vicino al pedone)
         if (pedoneCheck && manualBrake)
         {
             Debug.Log("Correct Brake");
-            AddReward(10f);
+            AddReward(100f);
         }
     }
 
@@ -195,12 +225,9 @@ public class CarAgent : Agent
             xCheck = (-2 < xDist) && (xDist < 14);
             zCheck = (0 < zDist) && (zDist < 10);
 
-            //Debug.Log("xCheck: " + xCheck + ", distanza: " + xDist);
-            //Debug.Log("zCheck: " + zCheck + ", distanza: " + zDist);
-
             if (xCheck && zCheck)
             {
-                Debug.Log("pedastrian " + pedone.name + " is in a risk point for " + gameObject.name + " .");
+                //Debug.Log("pedastrian " + pedone.name + " is in a risk point for " + gameObject.name + " .");
                 Debug.DrawLine(transform.position, pedone.transform.position, Color.blue);
             }
 
@@ -211,7 +238,7 @@ public class CarAgent : Agent
             }
         }
 
-        return pedOnTrajectory;
+            return pedOnTrajectory;
     }
 
     protected float getVelocitySpeed()
@@ -282,6 +309,8 @@ public class CarAgent : Agent
         {
             AddReward(0.1f);
         }
+
+        Debug.Log("Colpito: " + other.gameObject.name);
     }
 
     private void OnTriggerExit(Collider other)
