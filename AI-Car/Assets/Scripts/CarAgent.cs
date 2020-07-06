@@ -28,7 +28,7 @@ public class CarAgent : Agent
     private float xDist, zDist;
     private bool xCheck, zCheck;
     private Vector3 toTarget;
-    private bool manualBrake = false, pedoneCheck;
+    private bool manualBrake = false, pedoneCheck, pedoneSuperato;
 
     public override void Initialize()
     {
@@ -100,6 +100,8 @@ public class CarAgent : Agent
         //Controllo se incrocia un pedone; true=l'ha incrociato, false=non l'ha incrociato
         pedoneCheck = CheckPedoni();
 
+        pedoneSuperato = CheckPedoneSuperato();
+
         //Controllo se la macchina va all'indietro nel caso in cui non ha incrociato un pedone. Se sì, aggiungo un reward negativo
         if (vectorAction[1] < 0 && !pedoneCheck)    AddReward(-5f);
         else AddReward(0.1f);
@@ -121,17 +123,20 @@ public class CarAgent : Agent
                  //Se il pedone è sull'asse z AVANTI alla macchina allora la macchina deve fermarsi
                 if (pedone.transform.position.z >= transform.position.z)
                 {
-                    //rBody.velocity = Vector3.zero;
                     vectorAction[2] = 1;
-                    AddReward(30f);
-                }
-                //Se la macchina è avanti rispetto al pedone (Lo ha già superato ma lui sta attraversando lo stesso le strisce)
-                else
-                {
-                    Debug.Log("qui");
-                    pedone.transform.position = new Vector3(-5f, pedone.transform.position.y, pedone.transform.position.z);
-                    vectorAction[2] = 0;
-                    vectorAction[1] = 1;
+
+                    if (vectorAction[1] == 0)
+                    {
+                        Debug.Log("Bravo!");
+                        AddReward(100f);
+                    }
+                    else
+                    {
+                        AddReward(-10f);
+                    }
+                    // //rBody.velocity = Vector3.zero;
+                    //vectorAction[2] = 1;
+                    //AddReward(30f);
                 }
             }
 
@@ -141,14 +146,15 @@ public class CarAgent : Agent
                 vectorAction[2] = 0;
             }
 
-            if (getVelocitySpeed() < 3 && getVelocitySpeed() > -1)
+            if (getVelocitySpeed() <= 0.1f && getVelocitySpeed() > -1)
             {
                 Debug.Log("Correct Speed");
-                AddReward(maxZdist * 20f);
+                AddReward(maxZdist * 100f);
             }
             else
             {
-                AddReward(-10f);
+                Debug.Log("Wrong Speed");
+                AddReward(-70f);
             }
         }
         else if (getVelocitySpeed() < 3) AddReward(-100f);
@@ -178,6 +184,41 @@ public class CarAgent : Agent
         {
             Debug.Log("Correct Brake");
             AddReward(100f);
+        }
+
+
+        //Controllo per freezare il pedone
+        if (pedoneSuperato && (pedone.transform.position.x - transform.position.x) >= -5.8f && (pedone.transform.position.x - transform.position.x) <= 4.6f)
+        {
+            Debug.Log("pedone riposizionato");
+            pedone.GetComponent<Animator>().enabled = false;
+            pedone.GetComponent<CharacterNavigationController>().movementSpeed = 0f;
+        }
+        else
+        {
+            pedone.GetComponent<Animator>().enabled = true;
+            pedone.GetComponent<CharacterNavigationController>().movementSpeed = 2f;
+        }
+
+        //Se frena subito dopo aver superato il pedone non va bene perchè se sta troppo tempo ferma si scontrerebbe con il pedone che torna
+        if (pedoneSuperato && manualBrake)
+        {
+            Debug.Log("Superato ma non deve frenare");
+            AddReward(-10f);
+        }
+
+        if (pedoneSuperato && !manualBrake)
+        {
+            if (getVelocitySpeed() >= 3)
+            {
+                Debug.Log("Pedone superato, non sta frenando e ha velocità corretta");
+                AddReward(100f);
+            }
+            else
+            {
+                Debug.Log("Pedone superato, non sta frenando ma è lenta");
+                AddReward(-10f);
+            }
         }
     }
 
@@ -338,5 +379,19 @@ public class CarAgent : Agent
     protected void debug_drawDestination()
     {
         Debug.DrawLine(transform.position, checkpoint.transform.position, Color.yellow);
+    }
+
+    private bool CheckPedoneSuperato()
+    {
+        bool pedSuperato = false;
+        //toTarget = (pedone.transform.position - transform.position).normalized;
+
+        //Se True vuol dire che ho superato il pedone
+        if (Vector3.Dot(toTarget, transform.forward) < 0)
+        {
+            Debug.DrawLine(transform.position, pedone.transform.position, Color.red);
+            pedSuperato = true;
+        }
+            return pedSuperato;
     }
 }
