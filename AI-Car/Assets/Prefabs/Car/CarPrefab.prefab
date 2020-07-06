@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 4168634090699424}
   - component: {fileID: 54959213129792114}
   - component: {fileID: 65136797715955738}
-  - component: {fileID: 1542474887576511998}
   m_Layer: 0
   m_Name: CarPrefab
   m_TagString: Player
@@ -187,29 +186,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.0903716, y: 1.9291887, z: 7.2947855}
   m_Center: {x: 0, y: 1.27, z: -0.6316018}
---- !u!114 &1542474887576511998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309791300091212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53bafdd89d4c7be4f9a6b4948c0d1cf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WheelCFR: {fileID: 3304709921362445982}
-  WheelCFL: {fileID: 146599759331411188}
-  WheelCBR: {fileID: 1365960649706412667}
-  WheelCBL: {fileID: 360103380047385127}
-  WheelTFR: {fileID: 7468771099763022735}
-  WheelTFL: {fileID: 4783985945296125180}
-  WheelTBR: {fileID: 7505275513313485443}
-  WheelTBL: {fileID: 8973675886622051819}
-  maxSteerAngle: 30
-  motorForce: 300
-  brakes: 0
 --- !u!1 &1697114719555876
 GameObject:
   m_ObjectHideFlags: 0

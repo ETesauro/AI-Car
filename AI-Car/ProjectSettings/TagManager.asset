@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
+  - Strisce
+  - Stop
+  - People
+  - Checkpoint
+  - Waypoint
   layers:
   - Default
   - TransparentFX
