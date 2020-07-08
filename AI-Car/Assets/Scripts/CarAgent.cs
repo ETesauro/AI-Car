@@ -30,6 +30,9 @@ public class CarAgent : Agent
     private Vector3 toTarget;
     private bool manualBrake = false, pedoneCheck, pedoneSuperato;
 
+    public bool isTraining;
+    public float distanza;
+
     public override void Initialize()
     {
         rBody = GetComponent<Rigidbody>();
@@ -100,50 +103,53 @@ public class CarAgent : Agent
         //Controllo se incrocia un pedone; true=l'ha incrociato, false=non l'ha incrociato
         pedoneCheck = CheckPedoni();
 
+        //Controllo se ha superato il pedone; true=l'ha superato, false=non l'ha superato
         pedoneSuperato = CheckPedoneSuperato();
 
         //Controllo se la macchina va all'indietro nel caso in cui non ha incrociato un pedone. Se sì, aggiungo un reward negativo
-        if (vectorAction[1] < 0 && !pedoneCheck)    AddReward(-5f);
+        if (vectorAction[1] < 0 && !pedoneCheck) AddReward(-5f);
         else AddReward(0.1f);
 
         //Controllo se la macchina va avanti nel caso in cui non ha incrociato un pedone. Se sì, aggiungo un reward positivo
-        if (vectorAction[1] > 0 && !pedoneCheck)    AddReward(10f);
+        if (vectorAction[1] > 0 && !pedoneCheck) AddReward(10f);
 
         //Azioni da eseguire se si incrocia un pedone
         if (pedoneCheck)
         {
-
-            // --------- SISTEMARE DA QUI ---------
-            //Creare un metodo che restituisce true se la posizione della macchina è avanti sull'asse z rispetto a quella del pedone
-            //Mi serve per dire alla macchina di non frenare e di accelerare altrimenti rimarrebbe ferma e il pedone le andrebbe a sbattere addosso
-
-            //Se il pedone è sull'asse x vicino alla macchina
-            if ((pedone.transform.position.x - transform.position.x) >= -5.8f && (pedone.transform.position.x - transform.position.x) <= 4.6f)
+            //Se il pedone è sull'asse x vicino alla macchina e Se il pedone è sull'asse z AVANTI alla macchina allora la macchina deve fermarsi
+            if ((pedone.transform.position.x - transform.position.x) >= -5.8f && (pedone.transform.position.x - transform.position.x) <= 4.6f && pedone.transform.position.z >= transform.position.z)
             {
-                 //Se il pedone è sull'asse z AVANTI alla macchina allora la macchina deve fermarsi
-                if (pedone.transform.position.z >= transform.position.z)
+                if (isTraining)
                 {
                     vectorAction[2] = 1;
+                    vectorAction[1] = 0;
+                    Debug.Log("Frenata prevista");
+                    AddReward(10f);
 
-                    if (vectorAction[1] == 0)
-                    {
-                        Debug.Log("Bravo!");
-                        AddReward(100f);
-                    }
-                    else
-                    {
-                        AddReward(-10f);
-                    }
-                    // //rBody.velocity = Vector3.zero;
-                    //vectorAction[2] = 1;
-                    //AddReward(30f);
+                    motorForce = 0;
+                    rBody.velocity = Vector3.zero;
                 }
+
+                if (vectorAction[1] == 0 || rBody.velocity.z == 0)
+                {
+                    Debug.Log("Bravo!");
+                    AddReward(100f);
+                }
+                else
+                {
+                    AddReward(-70f);
+                }
+
+                // //rBody.velocity = Vector3.zero;
+                //vectorAction[2] = 1;
+                //AddReward(30f);
             }
 
-            // --------- FINO A QUI ---------
+            //Se lo vedi ma non rischi di colpirlo
             else
             {
                 vectorAction[2] = 0;
+                motorForce = 500;
             }
 
             if (getVelocitySpeed() <= 0.1f && getVelocitySpeed() > -1)
@@ -157,7 +163,11 @@ public class CarAgent : Agent
                 AddReward(-70f);
             }
         }
-        else if (getVelocitySpeed() < 3) AddReward(-100f);
+        else
+        {
+            motorForce = 500;
+            if (getVelocitySpeed() < 3) AddReward(-100f);
+        }
 
         //Frena
         if (vectorAction[2] >= 0.5)
@@ -190,13 +200,23 @@ public class CarAgent : Agent
         //Controllo per freezare il pedone
         if (pedoneSuperato && (pedone.transform.position.x - transform.position.x) >= -5.8f && (pedone.transform.position.x - transform.position.x) <= 4.6f)
         {
-            Debug.Log("pedone riposizionato");
-            pedone.GetComponent<Animator>().enabled = false;
-            pedone.GetComponent<CharacterNavigationController>().movementSpeed = 0f;
+            if (Vector3.Distance(transform.position, pedone.transform.position) >= 5)
+            {
+                pedone.GetComponent<Animator>().SetBool("isWalking", true);
+                pedone.GetComponent<CharacterNavigationController>().movementSpeed = 2f;
+            }
+            else
+            {
+                Debug.Log("pedone riposizionato");
+                //pedone.GetComponent<Animator>().enabled = false;
+                pedone.GetComponent<Animator>().SetBool("isWalking", false);
+                pedone.GetComponent<CharacterNavigationController>().movementSpeed = 0f;
+            }
         }
         else
         {
-            pedone.GetComponent<Animator>().enabled = true;
+            //pedone.GetComponent<Animator>().enabled = true;
+            pedone.GetComponent<Animator>().SetBool("isWalking", true);
             pedone.GetComponent<CharacterNavigationController>().movementSpeed = 2f;
         }
 
@@ -258,7 +278,8 @@ public class CarAgent : Agent
         bool pedOnTrajectory = false;
         toTarget = (pedone.transform.position - transform.position).normalized;
 
-        if (Vector3.Dot(toTarget, transform.forward) > 0)
+        //if (Vector3.Dot(toTarget, transform.forward) > 0)
+        if (transform.position.z + distanza < pedone.transform.position.z)
         {
             xDist = (pedone.transform.position.x - transform.position.x) + 10;
             zDist = Mathf.Abs(pedone.transform.position.z - transform.position.z);
@@ -279,7 +300,7 @@ public class CarAgent : Agent
             }
         }
 
-            return pedOnTrajectory;
+        return pedOnTrajectory;
     }
 
     protected float getVelocitySpeed()
@@ -387,11 +408,12 @@ public class CarAgent : Agent
         //toTarget = (pedone.transform.position - transform.position).normalized;
 
         //Se True vuol dire che ho superato il pedone
-        if (Vector3.Dot(toTarget, transform.forward) < 0)
+        //if (Vector3.Dot(toTarget, transform.forward) < 0)
+        if (transform.position.z + distanza >= pedone.transform.position.z)
         {
             Debug.DrawLine(transform.position, pedone.transform.position, Color.red);
             pedSuperato = true;
         }
-            return pedSuperato;
+        return pedSuperato;
     }
 }
