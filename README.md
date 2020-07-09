@@ -13,6 +13,6 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 
 ## Demo
 
-[![Demo](https://github.com/ETesauro/AI-Car/tree/master/Screenshots/Menu.gif)
+[![Demo][(https://github.com/ETesauro/AI-Car/tree/master/Screenshots/Menu.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
 
 <em style="">La grafica globale non è quella definitiva. Ci saranno aggiornamenti per i palazzi, per gli alberi, per l'erba, ecc...</em>
