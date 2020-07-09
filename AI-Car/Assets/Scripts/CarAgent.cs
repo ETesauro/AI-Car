@@ -224,7 +224,7 @@ public class CarAgent : Agent
         if (pedoneSuperato && manualBrake)
         {
             Debug.Log("Superato ma non deve frenare");
-            AddReward(-10f);
+            AddReward(-80f);
         }
 
         if (pedoneSuperato && !manualBrake)
@@ -237,7 +237,7 @@ public class CarAgent : Agent
             else
             {
                 Debug.Log("Pedone superato, non sta frenando ma è lenta");
-                AddReward(-10f);
+                AddReward(-80f);
             }
         }
     }
