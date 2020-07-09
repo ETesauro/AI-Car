@@ -15,5 +15,4 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 
 ![Demo](Screenshots/Menu.gif)
 
-
 <em style="">La grafica globale non è quella definitiva. Ci saranno aggiornamenti per i palazzi, per gli alberi, per l'erba, ecc...</em>
