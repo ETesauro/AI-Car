@@ -13,6 +13,6 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 
 ## Demo
 
-[![Demo Doccou alpha](https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Menu.gif)]
+[![Demo](https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Menu.gif)]
 
 <em style="">La grafica globale non è quella definitiva. Ci saranno aggiornamenti per i palazzi, per gli alberi, per l'erba, ecc...</em>
