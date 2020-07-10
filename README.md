@@ -8,10 +8,11 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 [LinkedIn] Emmanuel Tesauro: https://www.linkedin.com/in/emmanuel-tesauro-014244175/<br/>
 
 ### Screenshots
-
-|               Menu                |                Demo             |
-|     :---:                         |          :---:                    |
-| ![Screenshot1](Screenshots/Screenshot_1.png)     | ![Screenshot2](Screenshots/Screenshot_2.png)    |
+|               Screen_1                |                Screen_2		|
+|     :---:                         |          :---:                    	|
+| ![Screenshot1](Screenshots/1.png)     | ![Screenshot2](Screenshots/2.png)    |
+|               Screen_3                |                Screen_4		|
+| ![Screenshot1](Screenshots/3.png)     | ![Screenshot2](Screenshots/4.png)    |
 
 
 ## Demo
