@@ -20,10 +20,9 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 ![Demo](Screenshots/Demo.gif)
 
 
-| Menu | Demo |
-|     :---:      |          ---: |
-| git status     | git status    |
-| git diff       | git diff      |
+|               Menu                |                 Demo             |
+|     :---:                         |          ---:                    |
+| ![Menu](Screenshots/Menu.gif)     | ![Menu](Screenshots/Demo.gif)    |
 
 
 <em style="">La grafica globale non è quella definitiva. Ci saranno aggiornamenti per i palazzi, per gli alberi, per l'erba, ecc...</em>
