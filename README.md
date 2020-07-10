@@ -11,7 +11,8 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 
 |               Menu                |                Demo             |
 |     :---:                         |          :---:                    |
-| ![Screenshot1](Screenshots/Screenshot_1.png)     | ![Screenshot2](Screenshots/Screenshot_2.png)    |
+| ![Screenshot1](Screenshots/1.png)     | ![Screenshot2](Screenshots/2.png)    |
+| ![Screenshot1](Screenshots/3.png)     | ![Screenshot2](Screenshots/4.png)    |
 
 
 ## Demo
