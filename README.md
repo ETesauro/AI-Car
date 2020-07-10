@@ -11,16 +11,14 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 <img width="800" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_1.png?raw=true">
 <img width="800" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_2.png?raw=true">
 
-## Menu
+|               Menu                |                Demo             |
+|     :---:                         |          ---:                    |
+| ![Screenshot1](Screenshots/Screenshot_1.png)     | ![Screenshot2](Screenshots/Screenshot_2.png)    |
 
-![Menu](Screenshots/Menu.gif)
 
 ## Demo
 
-![Demo](Screenshots/Demo.gif)
-
-
-|               Menu                |                 Demo             |
+|               Menu                |                Demo             |
 |     :---:                         |          ---:                    |
 | ![Menu](Screenshots/Menu.gif)     | ![Menu](Screenshots/Demo.gif)    |
 
