@@ -8,8 +8,6 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 [LinkedIn] Emmanuel Tesauro: https://www.linkedin.com/in/emmanuel-tesauro-014244175/<br/>
 
 ### Screenshots
-<img width="800" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_1.png?raw=true">
-<img width="800" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_2.png?raw=true">
 
 |               Menu                |                Demo             |
 |     :---:                         |          :---:                    |
