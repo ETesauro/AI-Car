@@ -18,11 +18,9 @@ public class CarAgent : Agent
     private Rigidbody rBody;
     public GameObject checkpoint;
 
-
     public GameObject pedone;
     public Waypoint[] waypoints;
     private WaypointNavigator waypointNavigator;
-
 
     private float maxZdist;
     private float xDist, zDist;
@@ -31,7 +29,7 @@ public class CarAgent : Agent
     private bool manualBrake = false, pedoneCheck, pedoneSuperato;
 
     public bool isTraining;
-    public float distanza;
+    private float distanza = 3.5f;
 
     public override void Initialize()
     {
@@ -123,7 +121,7 @@ public class CarAgent : Agent
                 {
                     vectorAction[2] = 1;
                     vectorAction[1] = 0;
-                    Debug.Log("Frenata prevista");
+                    //Debug.Log("Frenata prevista");
                     AddReward(10f);
 
                     motorForce = 0;
@@ -132,17 +130,13 @@ public class CarAgent : Agent
 
                 if (vectorAction[1] == 0 || rBody.velocity.z == 0)
                 {
-                    Debug.Log("Bravo!");
+                    //Debug.Log("Bravo!");
                     AddReward(100f);
                 }
                 else
                 {
                     AddReward(-70f);
                 }
-
-                // //rBody.velocity = Vector3.zero;
-                //vectorAction[2] = 1;
-                //AddReward(30f);
             }
 
             //Se lo vedi ma non rischi di colpirlo
@@ -154,12 +148,11 @@ public class CarAgent : Agent
 
             if (getVelocitySpeed() <= 0.1f && getVelocitySpeed() > -1)
             {
-                Debug.Log("Correct Speed");
+                //Debug.Log("Correct Speed");
                 AddReward(maxZdist * 100f);
             }
             else
             {
-                Debug.Log("Wrong Speed");
                 AddReward(-70f);
             }
         }
@@ -185,14 +178,14 @@ public class CarAgent : Agent
         //Se frena nella posizione sbagliata (lontano dal pedone)
         if (!pedoneCheck && manualBrake)
         {
-            Debug.Log("Wrong Brake");
+            //Debug.Log("Wrong Brake");
             AddReward(-10f);
         }
 
         //Se frena nella posizione corretta (vicino al pedone)
         if (pedoneCheck && manualBrake)
         {
-            Debug.Log("Correct Brake");
+            //Debug.Log("Correct Brake");
             AddReward(100f);
         }
 
@@ -207,8 +200,7 @@ public class CarAgent : Agent
             }
             else
             {
-                Debug.Log("pedone riposizionato");
-                //pedone.GetComponent<Animator>().enabled = false;
+                //Debug.Log("pedone riposizionato");
                 pedone.GetComponent<Animator>().SetBool("isWalking", false);
                 pedone.GetComponent<CharacterNavigationController>().movementSpeed = 0f;
             }
@@ -223,7 +215,7 @@ public class CarAgent : Agent
         //Se frena subito dopo aver superato il pedone non va bene perchè se sta troppo tempo ferma si scontrerebbe con il pedone che torna
         if (pedoneSuperato && manualBrake)
         {
-            Debug.Log("Superato ma non deve frenare");
+            //Debug.Log("Superato ma non deve frenare");
             AddReward(-80f);
         }
 
@@ -231,12 +223,12 @@ public class CarAgent : Agent
         {
             if (getVelocitySpeed() >= 3)
             {
-                Debug.Log("Pedone superato, non sta frenando e ha velocità corretta");
+                //Debug.Log("Pedone superato, non sta frenando e ha velocità corretta");
                 AddReward(100f);
             }
             else
             {
-                Debug.Log("Pedone superato, non sta frenando ma è lenta");
+                //Debug.Log("Pedone superato, non sta frenando ma è lenta");
                 AddReward(-80f);
             }
         }
@@ -301,6 +293,19 @@ public class CarAgent : Agent
         }
 
         return pedOnTrajectory;
+    }
+
+    private bool CheckPedoneSuperato()
+    {
+        bool pedSuperato = false;
+
+        //Se True vuol dire che ho superato il pedone
+        if (transform.position.z + distanza >= pedone.transform.position.z)
+        {
+            Debug.DrawLine(transform.position, pedone.transform.position, Color.red);
+            pedSuperato = true;
+        }
+        return pedSuperato;
     }
 
     protected float getVelocitySpeed()
@@ -371,8 +376,6 @@ public class CarAgent : Agent
         {
             AddReward(0.1f);
         }
-
-        Debug.Log("Colpito: " + other.gameObject.name);
     }
 
     private void OnTriggerExit(Collider other)
@@ -385,7 +388,7 @@ public class CarAgent : Agent
 
     private void ResetCar()
     {
-        transform.localPosition = new Vector3(2.72f, 0.2f, 0f);
+        transform.localPosition = new Vector3(2.72f, 0.28f, 0f);
         transform.rotation = Quaternion.identity;
         rBody.velocity = Vector3.zero;
         rBody.angularVelocity = Vector3.zero;
@@ -400,20 +403,5 @@ public class CarAgent : Agent
     protected void debug_drawDestination()
     {
         Debug.DrawLine(transform.position, checkpoint.transform.position, Color.yellow);
-    }
-
-    private bool CheckPedoneSuperato()
-    {
-        bool pedSuperato = false;
-        //toTarget = (pedone.transform.position - transform.position).normalized;
-
-        //Se True vuol dire che ho superato il pedone
-        //if (Vector3.Dot(toTarget, transform.forward) < 0)
-        if (transform.position.z + distanza >= pedone.transform.position.z)
-        {
-            Debug.DrawLine(transform.position, pedone.transform.position, Color.red);
-            pedSuperato = true;
-        }
-        return pedSuperato;
     }
 }

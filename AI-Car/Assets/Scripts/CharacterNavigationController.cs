@@ -11,7 +11,7 @@ public class CharacterNavigationController: MonoBehaviour
     public Vector3 destination;
     public bool reachedDestination;
 
-    private Vector3 lastPosition;
+    private Vector3 lastPosition = Vector3.zero;
     private Vector3 velocity;
 
     private void Update()
