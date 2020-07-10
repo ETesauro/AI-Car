@@ -11,8 +11,19 @@ ML Agents: https://github.com/Unity-Technologies/ml-agents<br/>
 <img width="800" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_1.png?raw=true">
 <img width="800" src="https://github.com/ETesauro/AI-Car/blob/3_Terrain/Screenshots/Screenshot_2.png?raw=true">
 
+## Menu
+
+![Menu](Screenshots/Menu.gif)
+
 ## Demo
 
-![Demo](Screenshots/Menu.gif)
+![Demo](Screenshots/Demo.gif)
+
+
+| Menu | Demo |
+|     :---:      |          ---: |
+| git status     | git status    |
+| git diff       | git diff      |
+
 
 <em style="">La grafica globale non è quella definitiva. Ci saranno aggiornamenti per i palazzi, per gli alberi, per l'erba, ecc...</em>
