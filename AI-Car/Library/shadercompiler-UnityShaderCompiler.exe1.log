@@ -1,4 +1,695 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2019.3.3f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.3.3f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
-Cmd: compileSnippet
-  api=4 type=0 insize=7443 outsize=1082 kw=INSTANCING_ON _NORMALMAP_TANGENT_SPACE _NORMALMAP _MASKMAP _HEIGHTMAP pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileComputeKernel
+  api=4 insize=595 outsize=479 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=848 outsize=330 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 9 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(103): #error "SAMPLE_TEXTURECUBE_ARRAY" is not supported on GLES 3.0
+  error: 2 plat 9 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(108): #error "SAMPLE_TEXTURECUBE_ARRAY_LOD" is not supported on GLES 3.0
+  api=9 insize=9615 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/CommonMaterial.hlsl(172): 'PerceptualSmoothnessToRoughness': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/CommonMaterial.hlsl(176): 'RoughnessToPerceptualSmoothness': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(127): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(128): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(129): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(130): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(150): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(336): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(343): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(478): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(52): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(176): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(183): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/ScreenSpaceLighting/ScreenSpaceLighting.hlsl(6): 'Smoothstep01': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/ScreenSpaceLighting/ScreenSpaceLighting.hlsl(19): 'UnpackFloatInt8bit': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
+  api=18 insize=16425 outsize=38040 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(355): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(460): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(469): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(471): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(479): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(481): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(522): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(524): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(532): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(534): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(44): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(59): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(76): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(105): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(155): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(160): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(165): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(208): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(506): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(524): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(533): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(534): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(535): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(536): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(638): 'rgb_2_saturation': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(639): 'rgb_2_yc': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(640): 'sigmoid_shaper': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(641): 'glow_fwd': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(645): 'rgb_2_hue': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(646): 'center_hue': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(657): 'ACES_to_ACEScg': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(688): 'darkSurround_to_dimSurround': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(714): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(722): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(64): 'BSpline3Rightmost': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(65): 'BSpline3MiddleRight': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(66): 'BSpline3MiddleLeft': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(80): 'BSpline2Left': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(81): 'BSpline2Middle': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(52): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(176): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(183): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at UberPost.compute(205): 'FastSRGBToLinear': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at UberPost.compute(217): 'LinearToLogC': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at UberPost.compute(225): 'LinearToLogC': conversion from larger type to smaller, possible loss of data
+  api=18 insize=9809 outsize=40036 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=12109 outsize=6599 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=12109 outsize=3848 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=12109 outsize=1848 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=22438 outsize=21785 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=11985 outsize=6269 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=11985 outsize=6346 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=11985 outsize=3991 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=11985 outsize=3281 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11985 outsize=1905 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11985 outsize=1528 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(52): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(176): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(183): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
+  api=18 insize=4823 outsize=2555 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4823 outsize=677 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4823 outsize=682 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=1372 outsize=1469 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=18301 outsize=22617 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18301 outsize=2233 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=18301 outsize=5661 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=14139 outsize=1905 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=259 outsize=480 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  api=18 insize=868 outsize=2254 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=40264 outsize=185083 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=40264 outsize=42040 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=11531 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=9389 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=7373 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=5956 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=6568 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=8089 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=6195 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=8051 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=8128 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=8750 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=6326 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=7322 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=66874 outsize=8058 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=6417 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=5038 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=3673 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=3654 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=2999 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=3014 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=3118 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=3040 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=3780 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=4202 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=4245 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=3062 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=7214 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=66874 outsize=2327 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=2922 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=2634 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=2041 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1597 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1284 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1631 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1359 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1777 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1819 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1856 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1326 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=2026 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=66874 outsize=1750 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3450 outsize=1164 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  api=18 insize=22295 outsize=66323 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11494 outsize=4119 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9735 outsize=9494 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Exposure.compute(139): 'Luminance': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(355): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(460): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(469): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(471): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(479): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(481): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(522): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(524): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(532): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(534): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(44): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(59): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(76): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(105): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(155): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(160): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(165): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(208): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(506): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(524): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(533): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(534): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(535): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(536): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(638): 'rgb_2_saturation': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(639): 'rgb_2_yc': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(640): 'sigmoid_shaper': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(641): 'glow_fwd': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(645): 'rgb_2_hue': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(646): 'center_hue': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(657): 'ACES_to_ACEScg': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(688): 'darkSurround_to_dimSurround': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(714): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(722): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(52): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(176): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(183): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
+  api=18 insize=8233 outsize=1732 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(52): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(176): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(183): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
+  api=18 insize=6119 outsize=16276 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(64): 'BSpline3Rightmost': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(65): 'BSpline3MiddleRight': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(66): 'BSpline3MiddleLeft': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(80): 'BSpline2Left': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(81): 'BSpline2Middle': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(52): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(176): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(183): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
+  api=18 insize=6745 outsize=26774 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11559 outsize=5585 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9103 outsize=2745 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  api=18 insize=26542 outsize=52641 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=26542 outsize=15619 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(355): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(460): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(469): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(471): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(479): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(481): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(522): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(524): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(532): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ACES.hlsl(534): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/AreaLighting.hlsl(153): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/BSDF.hlsl(123): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/BSDF.hlsl(534): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/BSDF.hlsl(540): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/BSDF.hlsl(557): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/BSDF.hlsl(576): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(44): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(59): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(76): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(105): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(155): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(160): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(165): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(208): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(506): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(524): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(533): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(534): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(535): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(536): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(638): 'rgb_2_saturation': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(639): 'rgb_2_yc': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(640): 'sigmoid_shaper': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(641): 'glow_fwd': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(645): 'rgb_2_hue': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(646): 'center_hue': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(657): 'ACES_to_ACEScg': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(688): 'darkSurround_to_dimSurround': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(714): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl(722): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/CommonLighting.hlsl(68): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/CommonLighting.hlsl(412): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/CommonMaterial.hlsl(172): 'PerceptualSmoothnessToRoughness': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/CommonMaterial.hlsl(176): 'RoughnessToPerceptualSmoothness': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl(92): 'SHEvalLinearL0L1': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl(95): 'SHEvalLinearL2': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl(126): 'SHEvalLinearL0L1': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl(245): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl(250): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl(267): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl(272): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl(277): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/EntityLighting.hlsl(279): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(64): 'BSpline3Rightmost': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(65): 'BSpline3MiddleRight': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(66): 'BSpline3MiddleLeft': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(80): 'BSpline2Left': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Filtering.hlsl(81): 'BSpline2Middle': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(27): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(38): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(77): 'Orthonormalize': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(85): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(102): 'GetAnisotropicModifiedNormal': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(186): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(202): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(369): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(406): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(476): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(511): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(519): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(529): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(584): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(603): 'GetBSDFAngle': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(607): 'D_Charlie': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(608): 'V_Charlie': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(624): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(626): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(635): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(651): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(660): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(694): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(712): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(713): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/ImageBasedLighting.hlsl(720): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(127): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(128): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(129): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(130): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(150): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(336): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(343): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(478): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Refraction.hlsl(28): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Refraction.hlsl(35): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Refraction.hlsl(61): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Sampling/Fibonacci.hlsl(12): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Sampling/Fibonacci.hlsl(23): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Sampling/Fibonacci.hlsl(266): 'Fibonacci2dSeq': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Sampling/Hammersley.hlsl(21): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Sampling/Sampling.hlsl(128): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(52): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(176): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(183): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/AtmosphericScattering/AtmosphericScattering.hlsl(119): 'TransmittanceFromOpticalDepth': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/AtmosphericScattering/AtmosphericScattering.hlsl(229): 'Desaturate': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/AtmosphericScattering/AtmosphericScattering.hlsl(230): 'Desaturate': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/AtmosphericScattering/AtmosphericScattering.hlsl(287): 'DelinearizeRGBA': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/AtmosphericScattering/AtmosphericScattering.hlsl(309): 'OpticalDepthHeightFog': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/AtmosphericScattering/AtmosphericScattering.hlsl(311): 'TransmittanceFromOpticalDepth': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/AtmosphericScattering/AtmosphericScattering.hlsl(368): 'CompositeOver': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightEvaluation.hlsl(135): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightEvaluation.hlsl(182): 'OpticalDepthHeightFog': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightEvaluation.hlsl(185): 'TransmittanceFromOpticalDepth': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightEvaluation.hlsl(214): 'TransmittanceFromOpticalDepth': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightEvaluation.hlsl(216): 'Desaturate': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightEvaluation.hlsl(421): 'PunctualLightAttenuation': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightEvaluation.hlsl(431): 'TransmittanceHeightFog': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightEvaluation.hlsl(555): 'Smoothstep01': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightLoop/LightLoopDef.hlsl(58): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/LightLoop/LightLoopDef.hlsl(360): 'UnpackContactShadowData': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/ScreenSpaceLighting/ScreenSpaceLighting.hlsl(6): 'Smoothstep01': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/ScreenSpaceLighting/ScreenSpaceLighting.hlsl(19): 'UnpackFloatInt8bit': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDPCSS.hlsl(92): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDPCSS.hlsl(119): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDPCSS.hlsl(160): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDPCSS.hlsl(162): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDPCSS.hlsl(165): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(21): 'SampleShadow_ComputeSamples_Tent_3x3': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(24): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(44): 'SampleShadow_ComputeSamples_Tent_5x5': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(52): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(53): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(54): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(55): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(61): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(62): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(63): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(64): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(67): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(91): 'SampleShadow_ComputeSamples_Tent_7x7': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(99): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(100): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(101): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(102): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(107): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(108): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(109): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(110): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(115): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(116): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(117): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(118): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(123): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(124): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(125): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(126): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(294): 'BlockerSearch': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(313): 'PenumbraSizePunctual': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(314): 'PenumbraSizeDirectional': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/Shadow/HDShadowSampling.hlsl(319): 'PCSS': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/SurfaceShading.hlsl(50): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/SurfaceShading.hlsl(51): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/SurfaceShading.hlsl(97): 'ComputeMicroShadowing': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/SurfaceShading.hlsl(98): 'ComputeShadowColor': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/SurfaceShading.hlsl(126): 'GetPunctualShadowClosestDistance': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/SurfaceShading.hlsl(178): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/SurfaceShading.hlsl(186): 'ComputeShadowColor': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(230): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(237): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(238): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(244): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(251): 'VarianceToRoughness': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(257): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(260): 'IorToFresnel0': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(260): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(262): 'TransmittanceColorAtDistanceToAbsorption': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(263): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(264): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(381): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(400): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(406): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(407): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(572): 'GetLocalFrame': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(613): 'FastLinearToSRGB': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(619): 'PackFloatInt8bit': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(661): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(664): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(700): 'UnpackFloatInt8bit': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(748): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(749): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(758): 'UnpackFloatInt8bit': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(760): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(761): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(765): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(766): 'FastSRGBToLinear': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(780): 'UnpackFloatInt8bit': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(783): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(802): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(810): 'GetLocalFrame': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(818): 'UnpackFloatInt8bit': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(887): 'TransformWorldToViewDir': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(893): 'TransformWorldToViewDir': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(910): 'TransformWorldToViewDir': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(975): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(976): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(977): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(989): 'ClampNdotV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1005): 'EvalIridescence': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1017): 'GetSmithJointGGXPartLambdaV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1019): 'F_Schlick': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1051): 'GetSmithJointGGXAnisoPartLambdaV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1054): 'GetGGXAnisotropicModifiedNormalAndRoughness': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1058): 'GetSmithJointGGXPartLambdaV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1066): 'FastACosPos': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1067): 'Remap01ToHalfTexelCoord': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1086): 'GetOrthoBasisViewNormal': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1141): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1146): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1162): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1195): 'ClampNdotV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1197): 'ComputeWrappedDiffuseLighting': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1200): 'GetBSDFAngle': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1202): 'F_Schlick': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1225): 'DV_SmithJointGGXAniso': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1231): 'DV_SmithJointGGX': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1258): 'DisneyDiffuse': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1265): 'F_Schlick': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1272): 'DV_SmithJointGGX': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1362): 'EllipsoidalDistanceAttenuation': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1389): 'LTCEvaluate': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1394): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1406): 'LTCEvaluate': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1410): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1414): 'LTCEvaluate': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1419): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1424): 'LTCEvaluate': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1427): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1428): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1429): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1433): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1434): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1507): 'BoxDistanceAttenuation': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1537): 'PolygonIrradiance': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1544): 'PolygonFormFactor': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1550): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1566): 'PolygonIrradiance': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1573): 'PolygonFormFactor': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1579): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1585): 'PolygonIrradiance': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1592): 'PolygonFormFactor': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1599): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1605): 'PolygonIrradiance': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1611): 'PolygonFormFactor': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1615): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1616): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1617): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1621): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1622): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1667): 'ComputeShadowColor': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1668): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1669): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1713): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1848): 'ClampNdotV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1848): 'GetSpecularDominantDir': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1852): 'PerceptualRoughnessToRoughness': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1876): 'PlanarPerceptualRoughnessToMipmapLevel': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1880): 'PerceptualRoughnessToMipmapLevel': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/Lit.hlsl(1921): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(84): 'SampleRectangle': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(135): 'ImportanceSampleLambert': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(154): 'ClampNdotV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(165): 'ImportanceSampleLambert': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(172): 'DisneyDiffuse': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(197): 'GetLocalFrame': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(200): 'ClampNdotV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(215): 'ImportanceSampleAnisoGGX': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(219): 'ImportanceSampleGGX': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/Lit/LitReference.hlsl(225): 'F_Schlick': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(78): 'PerceptualRoughnessToRoughness': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(79): 'ClampNdotV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(79): 'GetSpecularOcclusionFromAmbientOcclusion': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(82): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(83): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(84): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(85): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(94): 'PerceptualRoughnessToRoughness': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(95): 'ClampNdotV': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(95): 'GetSpecularOcclusionFromAmbientOcclusion': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(98): 'GTAOMultiBounce': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(99): 'GTAOMultiBounce': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(100): 'GTAOMultiBounce': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/MaterialEvaluation.hlsl(101): 'GTAOMultiBounce': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/PreIntegratedFGD/PreIntegratedFGD.hlsl(11): 'Remap01ToHalfTexelCoord': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/SubsurfaceScattering/SubsurfaceScattering.hlsl(78): 'PackFloatInt8bit': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/SubsurfaceScattering/SubsurfaceScattering.hlsl(85): 'UnpackFloatInt8bit': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/SubsurfaceScattering/SubsurfaceScattering.hlsl(168): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/SubsurfaceScattering/SubsurfaceScattering.hlsl(169): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/SubsurfaceScattering/SubsurfaceScattering.hlsl(194): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/SubsurfaceScattering/SubsurfaceScattering.hlsl(196): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Material/SubsurfaceScattering/SubsurfaceScattering.hlsl(214): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Sky/PhysicallyBasedSky/PhysicallyBasedSkyCommon.hlsl(73): 'RayleighPhaseFunction': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Sky/PhysicallyBasedSky/PhysicallyBasedSkyCommon.hlsl(83): 'CornetteShanksPhasePartVarying': conversion from larger type to smaller, possible loss of data
+  api=18 insize=16295 outsize=498573 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=16295 outsize=119744 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=72903 outsize=23085 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3697 outsize=1820 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(52): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(176): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(183): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
+  api=18 insize=3787 outsize=13368 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=2557 outsize=2501 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=12177 outsize=1307 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3549 outsize=4769 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=34089 outsize=3182 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=34089 outsize=3382 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=34089 outsize=3488 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=34089 outsize=3268 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=34089 outsize=5678 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=34089 outsize=5641 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=34089 outsize=5479 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=34089 outsize=6702 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=34089 outsize=1893 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=34089 outsize=1890 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=34089 outsize=1778 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=34089 outsize=2834 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=34089 outsize=3167 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=34089 outsize=2924 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=34089 outsize=3054 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=629 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=695 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=855 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=854 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1298 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1369 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1288 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=34089 outsize=1631 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1028): conversion from larger type to smaller, possible loss of data
+  api=18 insize=7589 outsize=3912 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13959 outsize=3986 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=13959 outsize=4058 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=10587 outsize=1413 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=79248 outsize=36609 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=79248 outsize=17196 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=79248 outsize=15213 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=79248 outsize=13288 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=79248 outsize=19740 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=79248 outsize=57394 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=1572 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=1969 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=1905 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=5359 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=79248 outsize=12876 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=1868 outsize=3003 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=4442 outsize=3779 ok=1
+Cmd: compileComputeKernel
+  api=9 insize=1900 outsize=6232 ok=1
