@@ -164,6 +164,12 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/Sponky/Desktop/Nuova cartella (2)/AI-Car/AI-Car/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>C:/Users/Sponky/Desktop/Nuova cartella (2)/AI-Car/AI-Car/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools.Editor">
+      <HintPath>C:/Users/Sponky/Desktop/Nuova cartella (2)/AI-Car/AI-Car/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
