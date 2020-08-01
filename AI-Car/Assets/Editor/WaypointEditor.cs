@@ -40,13 +40,13 @@ public class WaypointEditor
 
 
 
-        if (waypoint.branches != null)
+        /*if (waypoint.branches != null)
         {
             foreach (Waypoint branch in waypoint.branches)
             {
                 Gizmos.color = Color.blue;
                 Gizmos.DrawLine(waypoint.transform.position, branch.transform.position);
             }
-        }
+        }*/
     }
 }

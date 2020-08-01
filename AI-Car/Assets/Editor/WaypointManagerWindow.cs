@@ -35,10 +35,10 @@ public class WaypointManagerWindow : EditorWindow
 
     void DrawButtons()
     {
-        if (GUILayout.Button("Add branch waypoint"))
+        /*if (GUILayout.Button("Add branch waypoint"))
         {
             CreateBranch();
-        }
+        }*/
 
         if (GUILayout.Button("Create waypoint"))
         {
@@ -150,7 +150,7 @@ public class WaypointManagerWindow : EditorWindow
         DestroyImmediate(selectedWaypoint.gameObject);
     }
 
-    void CreateBranch()
+    /*void CreateBranch()
     {
         GameObject waypointObject = new GameObject("Waypoint " + waypointRoot.childCount, typeof(Waypoint));
         waypointObject.transform.SetParent(waypointRoot, false);
@@ -164,5 +164,5 @@ public class WaypointManagerWindow : EditorWindow
         waypoint.transform.forward = branchedFrom.transform.forward;
 
         Selection.activeGameObject = waypoint.gameObject;
-    }
+    }*/
 }

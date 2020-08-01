@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene/SampleScene.unity
+- path: Assets/Scenes/AICarScene/AICar.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -31,8 +31,8 @@ public class CameraSwitch : MonoBehaviour
             cameras[0].gameObject.SetActive(true);
         }
 
-        isRunning = false;
-        ResumeText.gameObject.SetActive(true);
+        isRunning = true;
+        ResumeText.gameObject.SetActive(false);
 
     }
 
@@ -56,7 +56,7 @@ public class CameraSwitch : MonoBehaviour
             CurrentCameraText.text = "Current camera: " + (currentCameraIndex + 1);
         }
 
-        CheckPause();
+        //CheckPause();
     }
 
 
