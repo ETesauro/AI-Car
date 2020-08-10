@@ -117,7 +117,7 @@ public class CarAgent : Agent
         if (pedoneIncontrato)
         {
             //Se il pedone è sull'asse x vicino alla macchina e Se il pedone è sull'asse z AVANTI alla macchina allora la macchina deve fermarsi
-            if ((pedone.transform.position.x - transform.position.x) >= -5.8f && (pedone.transform.position.x - transform.position.x) <= 4.6f && pedone.transform.position.z >= transform.position.z)
+            if ((pedone.transform.position.x - transform.position.x) >= -9.5f && (pedone.transform.position.x - transform.position.x) <= 4.6f && pedone.transform.position.z >= transform.position.z)
             {
                 if (isTraining)
                 {
